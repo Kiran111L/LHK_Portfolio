@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laveti Hari Kiran | Portfolio</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="flags.css" />
+  <style>
+    body {
+      background: url("assets/abstract-blue.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      padding: 20px;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .wave-hand {
+      display: inline-block;
+      animation: wave 2s infinite;
+      transform-origin: 70% 70%;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg) }
+      10% { transform: rotate(14deg) }
+      20% { transform: rotate(-8deg) }
+      30% { transform: rotate(14deg) }
+      40% { transform: rotate(-4deg) }
+      50% { transform: rotate(10deg) }
+      60% { transform: rotate(0deg) }
+      100% { transform: rotate(0deg) }
+    }
+
+    .navbar {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      display: inline-flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .resume-button {
+      background: #ffda6b;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .get-in-touch-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background-color: #ffda6b;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .dark-card {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin: 1.5rem;
+  min-height: 280px; /* Added fixed height */
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-card h2 {
+  color: #ffda6b;
+  border-bottom: 3px solid #00d8ff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Make cards equal height */
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio-content {
+  flex: 3;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bio-avatar {
+  flex: 2;
+  min-width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-avatar img {
+  width: 100%;
+  height: 350px; /* More rectangular proportion */
+  max-width: 280px;
+  border-radius: 8px;
+  border: 4px solid #000;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  object-position: top center; /* Better face cropping */
+}
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .project-card {
+      background-color: #1f1f1f;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: left;
+    }
+
+    .section-title h2 {
+      color: #ffda6b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    footer hr {
+      margin-bottom: 1rem;
+      border-color: #444;
+    }
+
+    /* Contact Section Styling */
+    .contact-info {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-info li {
+      margin: 1rem 0;
+      padding: 0.8rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-info li:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateX(5px);
+    }
+
+    .contact-info a {
+      color: #00d8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="resume-button" href="assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="section">
+    <p>Hi there <span class="wave-hand">👋</span>, I'm</p>
+    <h1>Laveti Hari Kiran</h1>
+    <h2>I build impactful ML solutions & awesome websites</h2>
+    <p>I'm an aspiring Machine Learning Engineer and full-stack developer with a passion for scalable applications and data-driven insights. I bring ideas to life through Python, Flask, HTML, CSS, and clean, elegant code.</p>
+    <p>📍 Kalyani, West Bengal, India</p>
+    <a class="get-in-touch-button" href="#contact">Get in Touch</a>
+  </section>
+
+  <!-- BIO SECTION -->
+  <section class="bio-section">
+    <div class="bio-content">
+      <section id="about" class="dark-card">
+        <h2>About</h2>
+        <p>I'm a Computer Science student at IIIT Kalyani, passionate about solving real-world problems using Machine Learning and full-stack development. I love learning and improving every day.</p>
+      </section>
+
+      <section id="experience" class="dark-card">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Data Analyst Intern</strong> @ Yash Aircon (Summer 2024)</li>
+          <li><strong>Freelance Full-stack Developer</strong> – Medicine Inventory, Library System</li>
+        </ul>
+      </section>
+
+      <section id="education" class="dark-card">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech in Computer Science</strong> – IIIT Kalyani (Current, CGPA: 7.0)</li>
+          <li><strong>Intermediate</strong> – Tirumala Junior College, Visakhapatnam (94%)</li>
+          <li><strong>10th Grade</strong> – Sasi Educational Institutes, West Godavari (CGPA: 9.5)</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="bio-avatar">
+      <img src="assets/avatar.jpg" alt="Laveti Hari Kiran" />
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-title"><h2>Projects</h2><hr /></div>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Medicine Inventory System</h3>
+        <p>Flask + MySQL-based pharmacy inventory manager with demand prediction, Plotly visualizations, and Twilio alerts.</p>
+      </div>
+      <div class="project-card">
+        <h3>ML Resume Screener</h3>
+        <p>A machine learning tool that filters resumes using keyword extraction and classification techniques.</p>
+      </div>
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>Role-based full stack app integrated with MySQL for book, vendor, and member management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="dark-card">
+    <h2>Contact</h2>
+    <ul class="contact-info">
+      <li><strong>📞 Phone:</strong> +91 9494834065</li>
+      <li><strong>📧 Email:</strong> <a href="mailto:laveti.harikiran@gmail.com">laveti.harikiran@gmail.com</a></li>
+      <li><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/lavetiharikiran" target="_blank">linkedin.com/in/lavetiharikiran</a></li>
+      <li><strong>🐱 GitHub:</strong> <a href="https://github.com/lavetiharikiran" target="_blank">github.com/lavetiharikiran</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr />
+    <div style="color: #000; font-weight: bold; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 5px; display: inline-block;">
+      © 2025 Laveti Hari Kiran<br />ML aspirant | See you on the other side... 🚀
+    </div>
+  </footer>
+</body>
+</html>
